@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.country-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: 20px;
+    gap: 2em;
+}
+
+.cards-container{
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 400px;
+}
+
+.after-flag{
+    padding: 20px;
+}
+
+.flag-image{
+    width: 300px;
+}
+
+
+@media (min-width: 1000px){
+	.country-list{
+		grid-template-columns: repeat(3, 1fr);	
+	}
+}
+
+@media (max-width: 665px){
+	.country-list{
+		grid-template-columns: 1fr;	
+	}
+}
